@@ -1,4 +1,5 @@
 import React from 'react';
+import "typeface-roboto";
 
 // Based on
 // https://developers.google.com/identity/gsi/web/tools/configurator
@@ -6,7 +7,7 @@ import React from 'react';
 // https://developers.google.com/identity/sign-in/web/build-button
 // https://developers.google.com/identity/branding-guidelines
 
-const button = {
+const button : React.CSSProperties = {
   borderRadius: '4px',
   backgroundColor: '#fff',
   border: '1px solid #dadce0',
@@ -24,7 +25,7 @@ const button = {
   width: 'auto'
 };
 
-const buttonInnerDiv = {
+const buttonInnerDiv : React.CSSProperties = {
   display: 'flex',
   alignItems: 'center',
   flexDirection: 'row',
@@ -35,18 +36,31 @@ const buttonInnerDiv = {
   width: '100%'
 };
 
-const iconWrapper = {
-  heigth: '18px',
+const iconWrapper : React.CSSProperties = {
+  height: '18px',
   marginRight: '8px',
   minWidth: '18px',
   width: '18px'
 };
 
+export interface SignInWithGoogleButtonProps {
+  /**
+   * The button text.
+   */
+  text?: string;
+
+  /**
+   * The button onclick event handler.
+   */
+  onClick: React.MouseEventHandler<HTMLButtonElement> | undefined;
+}
+
 const SignInWithGoogleButton = ({
-  text = 'Sign in with Google'
-}) => {
+  text = 'Sign in with Google',
+  onClick
+} : SignInWithGoogleButtonProps) => {
   return (
-    <button style={button}>
+    <button style={button} onClick={onClick}>
       <div style={buttonInnerDiv}>
       <div style={iconWrapper}>
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 48 48">
@@ -67,7 +81,7 @@ const SignInWithGoogleButton = ({
           </g>
         </svg>
       </div>
-      <p class="google-button-text">{text}</p>
+      <p>{text}</p>
       </div>
     </button>
   );

@@ -1,11 +1,8 @@
 {
   "name": "reactsigninwithgooglebutton",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Renders the Sign In with Google Button without the onclick logic.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "main": "dist/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/inouiw/ReactSignInWithGoogleButton.git"
@@ -23,5 +20,31 @@
   "bugs": {
     "url": "https://github.com/inouiw/ReactSignInWithGoogleButton/issues"
   },
-  "homepage": "https://github.com/inouiw/ReactSignInWithGoogleButton#readme"
+  "homepage": "https://github.com/inouiw/ReactSignInWithGoogleButton#readme",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "npm run clean && tsc && cp package.json README.md ./dist"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "dependencies": {
+    "typeface-roboto": "latest"
+  },
+  "devDependencies": {
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "typescript": "latest"
+  }
 }
