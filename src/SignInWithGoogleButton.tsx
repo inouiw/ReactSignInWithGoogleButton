@@ -21,7 +21,6 @@ const button : React.CSSProperties = {
   padding: '0 12px',
   position: 'relative',
   textAlign: 'center',
-  verticalAlign: 'middle',
   width: 'auto'
 };
 
@@ -60,7 +59,7 @@ const SignInWithGoogleButton = ({
   onClick
 } : SignInWithGoogleButtonProps) => {
   return (
-    <button style={button} onClick={onClick}>
+    <button style={button} onClick={onClick} id='sign-in-with-google-button'>
       <div style={buttonInnerDiv}>
       <div style={iconWrapper}>
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 48 48">
