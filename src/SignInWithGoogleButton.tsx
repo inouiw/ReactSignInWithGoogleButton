@@ -57,7 +57,7 @@ export interface SignInWithGoogleButtonProps {
   /**
    * Styles to apply to the button element.
    */
-  buttonStyle: React.CSSProperties | undefined;
+  buttonStyle?: React.CSSProperties;
 }
 
 const SignInWithGoogleButton = ({
