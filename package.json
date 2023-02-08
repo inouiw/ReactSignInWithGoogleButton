@@ -1,6 +1,6 @@
 {
   "name": "reactsigninwithgooglebutton",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Renders the Sign In with Google Button without the onclick logic.",
   "main": "dist/index.js",
   "repository": {

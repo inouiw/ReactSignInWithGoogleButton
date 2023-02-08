@@ -21,6 +21,7 @@ const button : React.CSSProperties = {
   padding: '0 12px',
   position: 'relative',
   textAlign: 'center',
+  verticalAlign: 'middle',
   width: 'auto'
 };
 
@@ -52,14 +53,21 @@ export interface SignInWithGoogleButtonProps {
    * The button onclick event handler.
    */
   onClick: React.MouseEventHandler<HTMLButtonElement> | undefined;
+
+  /**
+   * Styles to apply to the button element.
+   */
+  buttonStyle: React.CSSProperties | undefined;
 }
 
 const SignInWithGoogleButton = ({
   text = 'Sign in with Google',
-  onClick
+  onClick,
+  buttonStyle
 } : SignInWithGoogleButtonProps) => {
+  const mergedButtonStyle = {...button, ...buttonStyle};
   return (
-    <button style={button} onClick={onClick} id='sign-in-with-google-button'>
+    <button style={mergedButtonStyle} onClick={onClick} id='sign-in-with-google-button'>
       <div style={buttonInnerDiv}>
       <div style={iconWrapper}>
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 48 48">
