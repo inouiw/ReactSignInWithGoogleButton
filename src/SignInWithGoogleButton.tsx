@@ -13,7 +13,7 @@ const button : React.CSSProperties = {
   border: '1px solid #dadce0',
   color: '#3c4043',
   cursor: 'pointer',
-  fontFamily: 'Roboto',
+  fontFamily: 'Roboto, Verdana',
   fontWeight: '500',
   fontSize: '14px',
   height: '40px',
