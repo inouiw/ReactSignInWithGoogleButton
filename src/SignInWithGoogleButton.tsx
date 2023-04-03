@@ -1,5 +1,5 @@
 import React from 'react';
-import "@fontsource/roboto";
+import "@fontsource/roboto/500.css";
 
 // Based on
 // https://developers.google.com/identity/gsi/web/tools/configurator
