@@ -38,7 +38,7 @@
     ]
   },
   "dependencies": {
-    "@fontsource/roboto": "latest"
+    "google-sans": "github:agnel/google-sans"
   },
   "devDependencies": {
     "@types/react": "latest",

@@ -1,5 +1,5 @@
 import React from 'react';
-import "@fontsource/roboto/500.css";
+import 'google-sans/500.css';
 
 // Based on
 // https://developers.google.com/identity/gsi/web/tools/configurator
@@ -13,7 +13,7 @@ const button : React.CSSProperties = {
   border: '1px solid #dadce0',
   color: '#3c4043',
   cursor: 'pointer',
-  fontFamily: 'Roboto, Verdana',
+  fontFamily: 'Google Sans, Roboto, Verdana, Arial, sans-serif',
   fontWeight: '500',
   fontSize: '14px',
   height: '40px',
