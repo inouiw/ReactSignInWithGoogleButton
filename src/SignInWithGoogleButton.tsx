@@ -1,5 +1,5 @@
 import React from 'react';
-import "typeface-roboto";
+import "@fontsource/roboto";
 
 // Based on
 // https://developers.google.com/identity/gsi/web/tools/configurator

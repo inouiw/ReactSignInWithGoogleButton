@@ -38,7 +38,7 @@
     ]
   },
   "dependencies": {
-    "typeface-roboto": "latest"
+    "@fontsource/roboto": "latest"
   },
   "devDependencies": {
     "@types/react": "latest",
